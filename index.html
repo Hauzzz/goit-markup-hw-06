@@ -286,14 +286,18 @@
                         <label for="user-text" class="modal-label">Комментарий</label>
                         <textarea placeholder="Введите текст" name="" id="user-text" class="modal-text"></textarea> 
                     </div>
-                         <div>
-                             <fieldset>
-                                 <legend>Соглашаюсь с рассылкой и принимаю <span class="conditions">Условия договора</span></legend>
-                                 <label for="big-size"></label>
-                                 <input type="radio" id="big-size">
-                             </fieldset>
+                    <div class="formfield">
+                        <input type="checkbox" class="modal-check visually-hidden" id="modal-check" name="modal-check"/>
+                        <label for="modal-check" class="modal-check-text">Соглашаюсь с рассылкой и принимаю <span class="conditions">Условия договора</span></label>
+
+                    </div>
+
+
                     <button type="submit" class="modalbtn">Отправить</button>  
               
+
+
+
                 </form>
                          </div>
                 </div>

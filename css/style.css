@@ -45,6 +45,19 @@ p{
     padding: 0;
 }
 
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 0;
@@ -1087,12 +1100,27 @@ margin: -15px;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    transition: color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
-.modal-close-btn:hover, .modal-close-btn:focus {
-    fill: var(--blue-color) ;
-    color: var(--blue-color);
+.modalbtn {
+    background: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 1px;
+    cursor: pointer;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 2;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    width: 89px;
+    height: 30px;
+    color: var(--white-color);
 }
 
 
@@ -1184,6 +1212,36 @@ margin: -15px;
         position: relative;
     }
 
+    .modal-check-text{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 2;
+        letter-spacing: 0.03em;
+        color: var(--grey-color);
+        display: flex;
+        align-items: center;
+    }
+
+    .modal-check-text::before {
+        width: 16px;
+        height: 15px;
+        border: 2px solid var(--black-color);
+        border-radius: 2px;
+        display: block;
+        margin-right: 5px;
+    }
+
+
+    .modal-check:checked + .modal-check-text::before {
+        background-image: url(../images/ok.svg#icon-icon-check);
+        border: none;
+    }
+       
+    
+        
+
 .is-hidden {
     opacity: 0;
     pointer-events: none;
@@ -1195,6 +1253,12 @@ margin: -15px;
     height: 18px;
     stroke-width: 0;
     fill: var(--black-color);
+    transition: color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-icon:hover, .close-icon:focus {
+    fill: var(--blue-color) ;
+    color: var(--blue-color);
 }
 
 .subscribe{
