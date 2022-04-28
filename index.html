@@ -242,7 +242,7 @@
 
 
         </div>
-        <section class="subscibtion">
+        <section class="subscribtion">
             <div class="subscribe">
                     
                     <p class="sub-on">Подпишитесь на рассылку</p>
@@ -259,8 +259,9 @@
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
                 <button type="button" class="modal-close-btn" data-modal-close><svg class="close-icon"><use href="./images/svgcloseiconn.svg#icon-close-black-18dp-2-1-1"></use></svg></button>
-                <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
-                <form class="modal-form">
+                <div class="wraper">
+                <form class="modal-form"> 
+                    <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
                     <div class="form-field">
                     <label for="user-name" class="modal-label">Имя</label>
                     <div class="modal-input-wrap">
@@ -286,11 +287,12 @@
                         <label for="user-text" class="modal-label">Комментарий</label>
                         <textarea placeholder="Введите текст" name="" id="user-text" class="modal-text"></textarea> 
                     </div>
+                            </div>                   
                     <div class="formfield">
                         <input type="checkbox" class="modal-check visually-hidden" id="modal-check" name="modal-check"/>
-                        <label for="modal-check" class="modal-check-text">Соглашаюсь с рассылкой и принимаю <span class="conditions">Условия договора</span></label>
-
+                        <label for="modal-check" class="modal-check-text">Соглашаюсь с рассылкой и принимаю  <span class="conditions">  Условия договора</span></label>
                     </div>
+                    
 
 
                     <button type="submit" class="modalbtn">Отправить</button>  
