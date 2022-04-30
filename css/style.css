@@ -46,16 +46,7 @@ p{
 }
 
 .visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -247,7 +238,7 @@ a{text-decoration: none;}
     padding-bottom: 32px;
     align-items: center;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
+    font-family: 'Roboto';
     
     
     
@@ -330,7 +321,7 @@ a{text-decoration: none;}
     cursor: pointer;
     width: 200px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     font-family: Roboto;
     font-size: 16px;
     line-height: 2;
@@ -939,13 +930,15 @@ margin: -15px;
 
   }
 
-  .port-cards:focus, .port-cards:hover {
+  .cards-p:focus, .cards-p:hover {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-top: 0;
     
   }
-  .port-cards {
+  .cards-p{
       display: block;
       box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+      border-top: 0;
       box-shadow: none;
       border: 1px solid var(--slight-grey_color);
       transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1136,6 +1129,10 @@ margin: -15px;
 
 .conditions {
     color: var(--blue-color);
+    border-bottom: 1px solid;
+    border-color: var(--blue-color);
+    padding-bottom: 0;
+
 }
 
 .modal-title {
