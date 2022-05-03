@@ -1290,8 +1290,8 @@ margin: -15px;
         color: var(--grey-color);
         display: flex;
         align-items: center;
-        padding-top: 10px;
-        padding-right: 8px;
+        margin-top: 10px;
+        
     }
 
     .modal-check-text::before {
@@ -1303,6 +1303,9 @@ margin: -15px;
         margin-right: 5px;
     }
 
+    .modal-check{
+        margin-right: 9px;
+    }
 
     .modal-check:checked + .modal-check-text::before {
         background-image: url(../images/check.svg#icon-icon-check);
