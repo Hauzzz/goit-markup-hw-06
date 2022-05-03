@@ -158,6 +158,23 @@ ul {
     
 }
 
+.current-sm {
+    color: var(--blue-color);
+    position: relative;
+}
+
+.current-sm::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    background-color: var(--blue-color);
+    left: 0;
+    bottom: 0;
+    display: block;
+    height: 1px;
+}
+
+
 .current::after {
     content: '';
     width: 100%;
@@ -1122,9 +1139,10 @@ margin: -15px;
     width: 200px;
     height: 50px;
     color: var(--white-color);
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 30px;
-    margin-bottom: 40px;
-    margin: auto;
+    margin-bottom: 20px;
 }
 
 .formfield{
@@ -1136,9 +1154,6 @@ margin: -15px;
 
 .conditions {
     color: var(--blue-color);
-    border-bottom: 1px solid;
-    border-color: var(--blue-color);
-    padding-bottom: 0;
 
 }
 
@@ -1152,6 +1167,7 @@ margin: -15px;
     letter-spacing: 0.03em;
     text-align: center;
     color: var(--black-color);
+    padding-bottom: 12px;
     }
 
     .modal-input {
@@ -1186,7 +1202,18 @@ margin: -15px;
         line-height: 1.2;
         letter-spacing: 0.01em;
         color: var(--grey-color);
-    }
+        
+       }
+
+       .form-word {
+           padding-bottom: 4px;
+           font-family: 'Roboto';
+           font-style: normal;
+           font-weight: 400;
+           font-size: 12px;
+           line-height: 1.2;
+           letter-spacing: 0.01em;
+       }
 
 
     
@@ -1241,6 +1268,7 @@ margin: -15px;
         color: var(--grey-color);
         display: flex;
         align-items: center;
+        padding-top: 10px;
     }
 
     .modal-check-text::before {
