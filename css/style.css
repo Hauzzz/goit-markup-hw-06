@@ -169,7 +169,7 @@ ul {
     position: absolute;
     background-color: var(--blue-color);
     left: 0;
-    bottom: 0;
+    bottom: 6px;
     display: block;
     height: 1px;
 }
@@ -1097,6 +1097,7 @@ margin: -15px;
     background-color: var(--backdrop-color);
     position: fixed;
     top: 0;
+    transition: color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -1149,7 +1150,6 @@ margin: -15px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
-    margin-bottom: 20px;
 }
 
 .formfield{
@@ -1161,6 +1161,7 @@ margin: -15px;
 
 .conditions {
     color: var(--blue-color);
+    cursor: pointer;
 
 }
 
@@ -1174,7 +1175,7 @@ margin: -15px;
     letter-spacing: 0.03em;
     text-align: center;
     color: var(--black-color);
-    padding-bottom: 12px;
+    margin-bottom: 12px;
     }
 
     .modal-input {
@@ -1186,7 +1187,7 @@ margin: -15px;
         cursor: pointer;
         outline: none;
         padding-left: 42px;
-        
+        transition: color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
 
 
     }
@@ -1195,6 +1196,7 @@ margin: -15px;
 
     .modal-input:hover, .modal-input:focus {
         border-color: var(--blue-color);
+        
     }
 
     .modal-input:hover::placeholder, .modal-input:focus::placeholder{
@@ -1209,6 +1211,7 @@ margin: -15px;
         line-height: 1.2;
         letter-spacing: 0.01em;
         color: var(--grey-color);
+        top: 0;
         
        }
 
@@ -1260,9 +1263,10 @@ margin: -15px;
         transform: translateY(-50%);
         color: currentColor;
         top: -20px;
+        transition: color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .modal-icon:hover, .modal-icon:focus {
+    .modal-icon+.modal-input:hover, .modal-icon+.modal-input:focus {
         fill: var(--blue-color);
         color: var(--blue-color);
         
@@ -1287,6 +1291,7 @@ margin: -15px;
         display: flex;
         align-items: center;
         padding-top: 10px;
+        padding-right: 8px;
     }
 
     .modal-check-text::before {
@@ -1309,7 +1314,7 @@ margin: -15px;
             padding-left: 40px;
             padding-right: 40px;
             padding-top: 40px;
-            padding-bottom: 20px;
+            padding-bottom: 40px;
         }
 
 .is-hidden {
