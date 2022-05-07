@@ -594,13 +594,7 @@ margin: -15px;
 
 .icons-ts {
     display: flex;
-    margin-top: 16px;
-    justify-content: center;
-    margin-left: 32px;
-    margin-right: 32px;
-    justify-content: space-between;
-    align-items: center;
-}
+    justify-content: center;}
 
 .ts-icons {
     width: 44px;
@@ -1058,7 +1052,7 @@ margin: -15px;
     line-height: 1;
     text-align: center;
     letter-spacing: 0.03em;
-    margin-top: 10px;
+    margin-bottom: 16px;
     }
 
 
