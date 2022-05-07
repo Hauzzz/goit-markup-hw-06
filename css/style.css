@@ -1145,7 +1145,6 @@ margin: -15px;
     color: var(--white-color);
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
 }
 
 .formfield{
@@ -1158,6 +1157,7 @@ margin: -15px;
 .conditions {
     color: var(--blue-color);
     cursor: pointer;
+    margin-left: 4px;
 
 }
 
@@ -1192,7 +1192,7 @@ margin: -15px;
 
     .modal-input:hover, .modal-input:focus {
         border-color: var(--blue-color);
-        
+        fill: currentColor;
     }
 
     .modal-input:hover::placeholder, .modal-input:focus::placeholder{
@@ -1245,7 +1245,7 @@ margin: -15px;
         resize: none;
         outline: none;
         transition: border-color 250ms  cubic-bezier(0.4, 0, 0.2, 1), color 250ms  cubic-bezier(0.4, 0, 0.2, 1);
-        
+        margin-bottom: 10px;
     }
 
     .modal-text:hover, .modal-text:focus {
@@ -1292,7 +1292,7 @@ margin: -15px;
         color: var(--grey-color);
         display: flex;
         align-items: center;
-        margin-top: 10px;
+        margin-bottom: 30px;
         
     }
 
@@ -1341,7 +1341,7 @@ margin: -15px;
 }
 
 .subscribe{
-    margin-left: 73px;
+    margin-left: auto;
 }
 
 .sub-on {
@@ -1380,6 +1380,7 @@ margin: -15px;
 
 .sub-form {
     margin-top: 20px;
+    display: flex;
 }
 
 .sub-email:hover, .sub-email:focus {
@@ -1424,17 +1425,13 @@ margin: -15px;
     color: var(--white-color);
     justify-content: center;
     align-items: center;
-    margin-top: 33px;
     margin-left: 12px;
     
     
     
 }
 
-.subscribtion{
-    display: flex;
-    
-}
+
 
 
 .plane{
