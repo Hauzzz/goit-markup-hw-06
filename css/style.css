@@ -594,12 +594,14 @@ margin: -15px;
 
 .icons-ts {
     display: flex;
-    justify-content: center;}
+    justify-content: center;
+    
+}
 
 .ts-icons {
     width: 44px;
     height: 44px;
-    
+    margin-right: 10px;
 }
 
 .ats-icons {
