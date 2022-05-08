@@ -1286,8 +1286,8 @@ margin: -15px;
         
     }
 
-    .modal-input:focus ~ .modal-icon:focus,
-    .modal-input:hover ~ .modal-icon:hover {
+    .modal-input:hover ~ .modal-icon:hover,
+    .modal-input:focus ~ .modal-icon:focus {
         fill: var(--blue-color);
     }
 
